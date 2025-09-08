@@ -1,0 +1,34 @@
+# Ignore files not needed in the production image build context
+node_modules
+npm-debug.log
+pnpm-debug.log
+yarn-error.log
+
+.git
+.gitignore
+.DS_Store
+
+# Local env & editor settings
+.env*
+!.env.example
+.vscode
+
+# Build artifacts / caches
+build
+dist
+.cache
+
+# Docker related
+Dockerfile*
+.dockerignore
+
+# Tests (if any are added later)
+coverage
+*.test.*
+__tests__
+
+# OS / misc
+Thumbs.db
+
+# Media that you may want to externalize (uncomment to exclude uploads from image)
+# public/uploads
